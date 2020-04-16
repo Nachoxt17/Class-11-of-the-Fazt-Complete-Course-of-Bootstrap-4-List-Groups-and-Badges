@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!--Agregando este Link de Abajo agregamos a Bootstrap 4 la Librería de FontAwesome, que sirve para Usar/Poner Íconos.-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title>Bootstrap 4 Course Class 11 - List Groups and Badges</title>
+        <!--Grupos de Lista e Insignias. "List Groups" Es la forma de Estilizar los Grupos de HTML con Bootstrap 4 y las Insignias(Badges) es una clase para Resaltar un Número o cierto Texto para que quede como
+        Los Números de Las Notificaciones en Facebook u Otras Redes Sociales. Están Ideadas para resaltar Números de Contadores(De Comentarios, Mensajes, Notificaciones, etc).-->
+</head>
+<body>
+
+<h1 class="h1">Bootstrap 4 List Groups.</h1>
+
+<hr class="bg-dark">
+
+<h1>Default HTML List.</h1>
+<ul>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aliquid aut. Labore ipsa ullam sit quasi eveniet praesentium error quis, veniam fugiat molestiae culpa dolorem repellendus eum molestias modi nam!</li>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aliquid aut. Labore ipsa ullam sit quasi eveniet praesentium error quis, veniam fugiat molestiae culpa dolorem repellendus eum molestias modi nam!</li>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aliquid aut. Labore ipsa ullam sit quasi eveniet praesentium error quis, veniam fugiat molestiae culpa dolorem repellendus eum molestias modi nam!</li>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aliquid aut. Labore ipsa ullam sit quasi eveniet praesentium error quis, veniam fugiat molestiae culpa dolorem repellendus eum molestias modi nam!</li>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aliquid aut. Labore ipsa ullam sit quasi eveniet praesentium error quis, veniam fugiat molestiae culpa dolorem repellendus eum molestias modi nam!</li>
+</ul>    
+
+<hr class="bg-dark">
+
+<h1>HTML List with &lt;ul class="list-group"&gt; and &lt;li class="list-group-item"&gt;.</h1>
+<ul class="list-group">
+    <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aliquid aut. Labore ipsa ullam sit quasi eveniet praesentium error quis, veniam fugiat molestiae culpa dolorem repellendus eum molestias modi nam!</li>
+    <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aliquid aut. Labore ipsa ullam sit quasi eveniet praesentium error quis, veniam fugiat molestiae culpa dolorem repellendus eum molestias modi nam!</li>
+    <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aliquid aut. Labore ipsa ullam sit quasi eveniet praesentium error quis, veniam fugiat molestiae culpa dolorem repellendus eum molestias modi nam!</li>
+    <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aliquid aut. Labore ipsa ullam sit quasi eveniet praesentium error quis, veniam fugiat molestiae culpa dolorem repellendus eum molestias modi nam!</li>
+    <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aliquid aut. Labore ipsa ullam sit quasi eveniet praesentium error quis, veniam fugiat molestiae culpa dolorem repellendus eum molestias modi nam!</li>
+</ul>
+
+<hr class="bg-dark">
+
+<h1>Links List with &lt;ul class="list-group"&gt; and &lt;a class="list-group-item"&gt;.</h1>
+<ul class="list-group">
+    <a href="#" class="list-group-item">Link 1</a>
+    <a href="#" class="list-group-item">Link 2</a>
+    <a href="#" class="list-group-item">Link 3</a>
+    <a href="#" class="list-group-item">Link 4</a>
+    <a href="#" class="list-group-item">Link 5</a>
+</ul>
+
+<hr class="bg-dark">
+
+<h1>Links List with &lt;ul class="list-group"&gt; and &lt;a class="list-group-item list-group-item-***"&gt; and the Differents Bootstrap 4 Predefined Colors.</h1>
+<ul class="list-group">
+    <a href="#" class="list-group-item list-group-item-primary">Link 1</a>
+    <a href="#" class="list-group-item list-group-item-info">Link 2</a>
+    <a href="#" class="list-group-item list-group-item-success">Link 3</a>
+    <a href="#" class="list-group-item list-group-item-white">Link 4</a>
+    <a href="#" class="list-group-item list-group-item-secondary">Link 5</a>
+    <a href="#" class="list-group-item list-group-item-dark">Link 6</a>
+    <a href="#" class="list-group-item list-group-item-warning">Link 7</a>
+    <a href="#" class="list-group-item list-group-item-danger">Link 8</a>
+</ul>
+
+<hr class="bg-dark">
+
+<h1>Notifications with Badges Exaples Using &lt;span class="badge badge-***"&gt;...#...&lt;/span&gt; and the Differents Bootstrap 4 Predefined Colors.</h1>
+<!--Los Badges(Que en Inglés Significa "Insignia") son una Clase para Resaltar un Número o cierto Texto para que quede como los Números de Las Notificaciones en Facebook u Otras Redes Sociales. Están Ideadas para
+ resaltar Números de Contadores(De Comentarios, Mensajes, Notificaciones, etc). Se usan Creando una Etiqueta <span>...#...</span>(Que en Inglés Significa "Abarcar" o "Selección") con la class="badge" y dentro de
+ la cual (Donde en el Título escribí "...#..."  a modo de Ejemplo) Se Pone el Número de Notificaciones/Mensajes/etc que queramos Contabilizar. A la class="badge" se le puede cambiar el color al igual que a todos
+ los elementos de Boostrap 4 escribiendo class="badge badge-***" donde "***" es el Color Predefinido de Boostrap 4 que queramos Utilizar.-->
+<ul class="list-group">
+    <a href="#" class="list-group-item">Notification Example "Primary"____<span class="badge badge-primary">1</span></a>
+    <a href="#" class="list-group-item">Notification Example "Info"________<span class="badge badge-info">2</span></a>
+    <a href="#" class="list-group-item">Notification Example "Success"____<span class="badge badge-success">3</span></a>
+    <a href="#" class="list-group-item">Notification Example "White"______<span class="badge badge-white">4</span></a>
+    <a href="#" class="list-group-item">Notification Example "Secondary"_<span class="badge badge-secondary">5</span></a>
+    <a href="#" class="list-group-item">Notification Example "Dark"_______<span class="badge badge-dark">6</span></a>
+    <a href="#" class="list-group-item">Notification Example "Warning"___<span class="badge badge-warning">7</span></a>
+    <a href="#" class="list-group-item">Notification Example "Danger"____<span class="badge badge-danger">8</span></a>
+</ul>
+
+<hr class="bg-dark">
+
+<h1>Notifications with Oval Badges Exaples Using &lt;span class="badge badge-*** badge-pill"&gt;...#...&lt;/span&gt; and the Differents Bootstrap 4 Predefined Colors.</h1>
+<!--Son Igual que los Badges Anteriores, pero acá les agregams la class="badge badge-*** badge-pill(ESTO ÚLTIMO)" para que el Badge Se vea Redondo/Ovalado en vez de Cuadrado como en el Ejemplo Anterior.-->
+<ul class="list-group">
+    <a href="#" class="list-group-item">Oval Notification Example "Primary"____<span class="badge badge-primary badge-pill">1</span></a>
+    <a href="#" class="list-group-item">Oval Notification Example "Info"________<span class="badge badge-info badge-pill">2</span></a>
+    <a href="#" class="list-group-item">Oval Notification Example "Success"____<span class="badge badge-success badge-pill">3</span></a>
+    <a href="#" class="list-group-item">Oval Notification Example "White"______<span class="badge badge-white badge-pill">4</span></a>
+    <a href="#" class="list-group-item">Oval Notification Example "Secondary"_<span class="badge badge-secondary badge-pill">5</span></a>
+    <a href="#" class="list-group-item">Oval Notification Example "Dark"_______<span class="badge badge-dark badge-pill">6</span></a>
+    <a href="#" class="list-group-item">Oval Notification Example "Warning"___<span class="badge badge-warning badge-pill">7</span></a>
+    <a href="#" class="list-group-item">Oval Notification Example "Danger"____<span class="badge badge-danger badge-pill">8</span></a>
+</ul>
+
+<hr class="bg-dark">
+
+<h1>Rigth Aligned Notification Number Exaples Using the class="... d-flex justify-content-between align-items-center" in the List Items.</h1>
+<!--Son Igual que los Badges Anteriores, pero acá les agregams la class="... d-flex justify-content-between align-items-center(TODO ESTO ÚLTIMO)" para que los Números se Vayan a la Derecha de Todo en vez de 
+permanecer al final del texto como en el Ejemplo Anterior. Esta Tecnología que se Está Utilizando en estas Clases es CSS FLEXBOX, para aprender más ir a https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+o a https://www.freecodecamp.org/learn/responsive-web-design/css-flexbox/.-->
+<ul class="list-group w-25">
+    <a href="#" class="list-group-item d-flex justify-content-between align-items-center">Notification Example<span class="badge badge-primary badge-pill">1</span></a>
+    <a href="#" class="list-group-item d-flex justify-content-between align-items-center">Notification Example<span class="badge badge-info badge-pill">2</span></a>
+    <a href="#" class="list-group-item d-flex justify-content-between align-items-center">Notification Example<span class="badge badge-success badge-pill">3</span></a>
+    <a href="#" class="list-group-item d-flex justify-content-between align-items-center">Notification Example<span class="badge badge-white badge-pill">4</span></a>
+    <a href="#" class="list-group-item d-flex justify-content-between align-items-center">Notification Example<span class="badge badge-secondary badge-pill">5</span></a>
+    <a href="#" class="list-group-item d-flex justify-content-between align-items-center">Notification Example<span class="badge badge-dark badge-pill">6</span></a>
+    <a href="#" class="list-group-item d-flex justify-content-between align-items-center">Notification Example<span class="badge badge-warning badge-pill">7</span></a>
+    <a href="#" class="list-group-item d-flex justify-content-between align-items-center">Notification Example<span class="badge badge-danger badge-pill">8</span></a>
+</ul>
+
+<hr class="bg-dark">
+
+
+
+
+
+<!-- Si utilizamos componentes de Bootstrap que requieran Javascript agregar estos tres archivos -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
